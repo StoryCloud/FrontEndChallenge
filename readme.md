@@ -12,7 +12,7 @@ Write a single page JavaScript application that allows one to search Github.com 
 * Forks
 * Open Issues
 
-All required libraries are provided. **You can only edit app.js; you cannot touch index.html.** Solution does not need to support older browsers.
+All required libraries are provided. Solution does not need to support older browsers.
 
 ## CSS Test ##
 
