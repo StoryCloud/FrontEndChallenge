@@ -3,7 +3,13 @@
 There is no one way to complete these exercises as long as the minimum requirements are met.
 
 ## JavaScript Test ##
-Write a single page JavaScript application that allows one to search Github.com for repos by keyword. The results should show as a list, grouped by "owner" using Angular Material Design "Sticky Headings" as demo'd in the [Angular Material Design SubHeader Demo](https://material.angularjs.org/#/demo/material.components.subheader). Each matching repo should be contained inside a [Material Design Card](https://material.angularjs.org/#/demo/material.components.card). Cards should contain the following information on separate rows:
+Write a single page JavaScript application that allows one to search Github.com for repos by keyword. Cache the results
+to prevent triggering duplicate network requests. The results should show as a list, grouped by "owner" using Angular
+Material Design "Sticky Headings" as demo'd in the
+[Angular Material Design SubHeader Demo](https://material.angularjs.org/#/demo/material.components.subheader). Each
+matching repo should be contained inside a
+[Material Design Card](https://material.angularjs.org/#/demo/material.components.card). Cards should contain the
+following information on separate rows:
 
 * Repo Name (in bold, linked to the repo)
 * Description. If not available, this row is hidden
