@@ -33,9 +33,9 @@ to the GitHub API is provided in app.js.
 ## CSS Test ##
 
 Create a page with 12 equally proportioned container elements, styled however you choose. Within each container, vertically
-center the word “StoryCloud”. Add a checkbox toggle that when checked makes each of the containers' background color
-light-gray and text maroon (and when unchecked returns each style to its original state). We ask that you do this without
-using JavaScript (this is a CSS test, after all).
+center the word “StoryCloud”. At the top of the screen, add a single checkbox toggle that when checked makes each of the
+containers' background color light-gray and text maroon (and when unchecked returns each style to its original state). Do
+this without using JavaScript (this is a CSS test, after all).
 
 This should be a responsive page that is usable and readable on any device. The following guidelines are provided:
 
