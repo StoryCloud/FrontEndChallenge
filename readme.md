@@ -1,6 +1,15 @@
 # Overview #
 
-There is no one way to complete these exercises as long as the minimum requirements are met.
+This coding challenge is designed to be an introduction. We get to see your design and coding skills and in return we give
+you a taste what of our Front-End development pipeline is like at StoryCloud. There is no one way to complete these exercises
+as long as the minimum requirements are met. As users of the apps you create, we will be looking for a delightful user
+experience. As co-maintainers of your apps, we will be looking at how you organize and develop your code for extensibility and
+reuse as well as at its clarity and elegance.
+
+We work in the modern era; your solutions do not need to support older browsers, but they should be usable on mobile platforms,
+tablets, and desktops.
+
+Go ahead, impress us!
 
 ## JavaScript Test ##
 Write a single page JavaScript application that allows one to search Github.com for repos by keyword. Cache the results
@@ -18,19 +27,28 @@ following information on separate rows:
 * Forks
 * Open Issues
 
-All required libraries are provided. Solution does not need to support older browsers.
+All required libraries (plus a few optional ones) are provided in the JS Skeleton project. A brief intro to the GitHub
+API is provided in app.js.
 
 ## CSS Test ##
 
-1. Create a DIV that has 12 equally proportioned child DIVs that on a mobile device stack on top of each other
-2. With in each child DIV, vertically center the word “StoryCloud” and give each DIV a unique background color
-3. For medium sized devices, have the original position and layout of the child DIVs stack to 4 rows of 3
-4. For large sized devices, have the next state for the child DIVs be 6 rows of 2
-5. For large sized devices, on hover of a child DIV, create a transition to change the background color and font style to one of your choice
-6. Create row above the existing DIVs that is full width of the parent container. In this row create a Checkbox
-7. Using this check box, on check, add a class to the container with the 12 child DIVs that makes each of their background colors white and text purple. You should be able to toggle between states using this checkbox
+Create a page with 12 equally proportioned container elements, styled however you choose. Within each container, vertically
+center the word “StoryCloud”. This should be a responsive page that is usable and readabile on any device. The following
+guidelines are provided:
 
-#### CSS Bonus ####
+* On a mobile device, these elements should stack on top of each-other and the text should be 20% larger than the other platforms
+* On medium-sized devices, have the containers stack to 4 rows of 3
+* On large-sized devices:
+  * Have the containers stack to 6 rows of 2
+  * When the user hovers over a container, create a transition to change the background color and font style to one of your choice
+* Add a checkbox toggle that when checked makes each of the containers' background color light-gray and text maroon (and when
+unchecked returns each style to its original state)
+  * We ask that you do this without using JavaScript (this is a CSS test, after all)
 
-1. Implement a hierarchal page entrance animation for each of the 12 DIVs.
-2. Implement a Material Design Slidenav that is locked at 700px, but not at a lower window width. You should be able to toggle it on and off however at < 700px.
+Visually, these are some pretty vanilla requirements, so feel free to make it pretty. Here's some suggestions to help spice it up:
+* Implement a hierarchal page entrance animation for each container
+* Leverage Angular's Material Design library
+
+## Bonus ##
+Integrate the two challenges using a Material Design Slidenav that enables the viewer to select the challenge to view. It should
+be locked at 150px on large screens but expandable on small and medium devices.
