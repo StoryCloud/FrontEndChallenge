@@ -1,37 +1,38 @@
-/*
-    # Endpoint URL #
-    
-    https://api.github.com/legacy/repos/search/{query}
-    
-    Note: Github imposes a rate limit of 60 request per minute. Documentation can be found at http://developer.github.com/v3/.
-    
-    # Example Response JSON #
-    
-    {
-      "meta": {...},
-      "data": {
-        "repositories": [
-          {
-            "type": string,
-            "watchers": number,
-            "followers": number,
-            "username": string,
-            "owner": string,
-            "created": string,
-            "created_at": string,
-            "pushed_at": string,
-            "description": string,
-            "forks": number,
-            "pushed": string,
-            "fork": boolean,
-            "size": number,
-            "name": string,
-            "private": boolean,
-            "language": number
-          },
-          {...},
-          {...}
-        ]
-      }
-    }
-*/
+(function() {
+    'use strict';
+
+    var app = angular.module('app', [
+        'ngMaterial'
+    ]);
+
+    app.controller('MainController', function ($scope, $http) {
+        var path = 'data.json';
+
+        // Response from $http.get is structured as follows:
+        /*
+         {
+           "OWNER_NAME":[
+             {
+               "name":"REPO_NAME",
+               "owner":"OWNER_NAME",
+               "homepage":"HOME_PAGE_URL",
+               "description":"DESCRIPTION",
+               "language":"LANGUAGE",
+               "forks":NUMBER_OF_FORKS,
+               "open_issues":NUMBER_OF_OPEN_ISSUES,
+             },
+             { ... }
+           ],
+           "OWNER_NAME": [ ... ]
+         }
+         */
+        // See data.json for actual data
+
+        $scope.onSearchClick = function () {
+            $http.get(path).success(function (data) {
+                $scope.data = data;
+            });
+        };
+    });
+
+}());
