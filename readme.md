@@ -13,16 +13,16 @@ Go ahead, impress us!
 
 ## CSS Test ##
 
-The [Angular Material Design library](https://material.angularjs.org) provides several very tools for responsive layouts, grid systems,
+The [Angular Material Design library](https://material.angularjs.org) provides several tools for responsive layouts, grid systems,
 and child element alignment. We would like you to leverage these tools where appropriate to perform the following:
 
 * Create a page with 12 equally proportioned container elements. Center the word “StoryCloud” within each container, horizontally and vertically
 * This should be a responsive page that is usable and readable on any device. The following guidelines are provided:
-* On a mobile device, these elements should stack on top of each-other and the text should be 20% larger than the other platforms
-* On medium-sized devices, have the containers stack to 4 rows of 3
-* On large-sized devices:
-  * Have the containers stack to 2 rows of 6
-  * When the user hovers over a container, create a transition to change the background color and font style to one of your choice
+  * On a mobile device, these elements should stack on top of each-other and the text should be 20% larger than the other platforms
+  * On medium-sized devices, have the containers stack to 4 rows of 3
+  * On large-sized devices:
+    * Have the containers stack to 2 rows of 6
+    * When the user hovers over a container, create a transition to change the background color and font style to one of your choice
 
 In addition, add the following features:
 * At the top of the screen, add a single checkbox toggle that when checked makes each of the containers' background color light-gray and text
@@ -37,13 +37,9 @@ The [Angular Material Design library](https://material.angularjs.org) implements
 provided by the library, write a single page JavaScript application that simulates a GitHub.com search by keyword.
 * Create a heading for the app with whatever content you choose
 * Provide a search box with a button that would allow the user to search GitHub
-* The results should show as a list, with all repositories belonging to the same owner grouped under his name "owner". The
-Owner's name should be contained in Angular Material Design "SubHeadings".
-  * As demo'd in the [Angular Material Design SubHeader Demo](https://material.angularjs.org/#/demo/material.components.subheader), this subheading
-should stick to the top of the scrollable area as the user scrolls through the list of repos.
-  * Each repo should be contained inside a [Material Design Card](https://material.angularjs.org/#/demo/material.components.card). Cards should
-contain the following information on separate rows:
-
+* The results should show as a list, with all repositories belonging to the same owner grouped under his name "owner". The Owner's name should be contained in Angular Material Design "SubHeadings".
+  * As demo'd in the [Angular Material Design SubHeader Demo](https://material.angularjs.org/#/demo/material.components.subheader), this subheading should stick to the top of the scrollable area as the user scrolls through the list of repos.
+  * Each repo should be contained inside a [Material Design Card](https://material.angularjs.org/#/demo/material.components.card). Cards should contain the following information on separate rows:
     * Repo Name (in bold, linked to the repo)
     * Description. If not available, this row is hidden
     * Home page. If not available, this row is hidden
@@ -51,9 +47,7 @@ contain the following information on separate rows:
     * Forks
     * Open Issues
 
-All required libraries (plus a few optional but helpful ones) are provided in the JS Skeleton project. A brief intro
-to the GitHub API is provided in app.js.
+All required libraries (plus a few optional but helpful ones) are provided in the JS Skeleton project. Since this challenge has a CSS focus you don't need to implement a data access layer; the skeleton project provides an `onSearchClick` hook for you to wire your to search.
 
 ## Bonus ##
-Integrate the two challenges using a Material Design SlideNav that enables the viewer to select the challenge to view. It should
-be locked at 150px on large and medium screens and act as a toggle on small ones.
+Integrate the two challenges using a Material Design SlideNav that enables the viewer to select the challenge to view. It should be locked at 150px on large and medium screens and act as a toggle on small ones.
