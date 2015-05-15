@@ -42,7 +42,7 @@ This should be a responsive page that is usable and readable on any device. The 
 * On a mobile device, these elements should stack on top of each-other and the text should be 20% larger than the other platforms
 * On medium-sized devices, have the containers stack to 4 rows of 3
 * On large-sized devices:
-  * Have the containers stack to 6 rows of 2
+  * Have the containers stack to 2 rows of 6
   * When the user hovers over a container, create a transition to change the background color and font style to one of your choice
 
 Visually, these are some pretty vanilla requirements, so feel free to make it pretty. Here's some suggestions to help spice it up:
